@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/faizrazadec/HelloWorldPipeline.git'
+                git branch: 'main', url: 'https://github.com/faizrazadec/HelloWorldPipeline.git'
             }
         }
         stage('Build') {
